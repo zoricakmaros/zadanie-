@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Projekt</title>
+		<link rel="stylesheet" href="style.css">
+		<script src="script.js" type="text/javascript"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+
+	</head>
+
+	 <body>
+	 <body>
+	 
+	<div id="center">
+		<table class="inputTable">
+
+			<tr>
+				<td class="label"><b>Name:</b></td>
+				<td>
+					<center><input id="name" type="text" onkeypress="return alpha(event,letters)"  placeholder="Name"/></center>
+				</td>
+
+				<td class="label"><b>Surname:</b></td>
+				<td>
+			
+				<center><input id="surname" type="text" onkeypress="return alpha(event,letters)"  placeholder="Surname"/></center>
+					</td>	
+				
+				
+				 <td class="label"><b>Date:</b></td>
+			  <td> 
+					 <center><input id="Date" type="date"/></center>
+			  </td>
+
+
+				<td>
+					<input id="sexM" type="radio" name="pohlavie" value="Man" name="sex" />Man <br/>
+					<input id="sexW" type="radio" name="pohlavie" value="Woman" name="sex" />Woman<br/>
+				</td>
+			</tr>
+
+		</table>  
+
+
+</form>
+		<button class="button" onclick="createRow()">Submit</button>
+	    
+		<table id="resultTable" class="inputTable" >
+		    <tbody>
+				<tr id="resultHeaderRow">
+					<th onclick="sortTable(0)">Name</button></th>
+					<th onclick="sortTable(1)">Surname</th>
+					<th onclick="sortTable(2)">Date</th>
+					<th onclick="sortTable(3)">Sex</th>
+
+					
+				</tr>
+			</tbody>			
+		</table>
+		
+	
+	</body>
+</html>
